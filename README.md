@@ -26,6 +26,19 @@ Usability enhancements:
   * Configure your passwordless login (`ssh-copy-id <USERNAME>@<IP-ADDRESS>` from the remote to the Pi).
   * Update package repository: `apt-get update`
 
+Systemd:
+
+Set up some local servies using `systemd` 
+
+* See documentation for writing a service, or see local scripts.
+* Copy the unit scripts to `/etc/systemd/system/`
+* `systemctl` is now your friend for your services.
+* Commands include:
+  * `start/stop/restart` for running the service directly.
+  * `enable/disable` for enabling the service to start automatically.
+  * Possinly need `daemon-reload` after editing unit files. And likely `reenable` for the edited service. 
+  * More details: https://www.commandlinux.com/man-page/man1/systemctl.1.html
+
 Camera Usage:
 
 GPIO Usage:
