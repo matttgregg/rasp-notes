@@ -1,0 +1,14 @@
+{
+  "heartbeat_seconds": 14400,
+  "show_video": false,
+  "use_dropbox": false,
+  "dropbox_access_token": "",
+  "dropbox_base_path": "",
+  "min_upload_seconds": 0.5,
+  "min_motion_frames": 4,
+  "camera_warmup_time": 2.5,
+  "delta_thresh": 5,
+  "resolution": [640, 480],
+  "fps": 8,
+  "min_area": 750
+}

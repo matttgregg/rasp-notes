@@ -1,0 +1,13 @@
+[Unit]
+Description=Camera Watcher
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+User=matt
+WorkingDirectory=/home/matt/code
+ExecStart=python pi_surveillance.py --conf conf.json
+
+[Install]
+WantedBy=multi-user.target

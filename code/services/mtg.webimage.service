@@ -1,0 +1,13 @@
+[Unit]
+Description=Basic server for captured camera images.
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+User=matt
+WorkingDirectory=/home/matt/code/images
+ExecStart=python -m SimpleHTTPServer
+
+[Install]
+WantedBy=multi-user.target
